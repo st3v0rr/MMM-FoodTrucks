@@ -1,0 +1,47 @@
+<div class="foodtruckcontainer">
+{% for foodtruck in data.result %}
+  <div class="foodtruckprofile">
+    <div class="foodtrucksplitview">
+      <div>
+        <div class="foodtrucktitle">{{ foodtruck.vendor.name.short }}</div>
+        {% if config.showPaymentOptions %}
+          <div>
+            {% if "pay_cash" in foodtruck.vendor.payments %}
+              <i class="fa-solid fa-sack-dollar"></i>
+            {% endif %}
+            {% if ("pay_creditcard" in foodtruck.vendor.payments) or ("pay_debitcard" in foodtruck.vendor.payments) %}
+              <i class="fa-regular fa-credit-card"></i>
+            {% endif %}
+            {% if "pay_paypal" in foodtruck.vendor.payments %}
+              <i class="fa-brands fa-paypal"></i>
+            {% endif %}
+            {% if "pay_paypal" in foodtruck.vendor.payments %}
+              <i class="fa-brands fa-apple-pay"></i>
+            {% endif %}
+            {% if "pay_paypal" in foodtruck.vendor.payments %}
+              <i class="fa-brands fa-google-pay"></i>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+      {% if config.showLogo %}
+        <img class="foodtruckimage" src="{{ foodtruck.logo.url.local }}" alt="{{ foodtruck.logo.url.local }}"/>
+      {% endif %}
+    </div>
+    <div class="foodtrucksplitview">
+      <div class="foodtrucksalignleft">
+      </div>
+      <div class="foodtrucksaligncenter">
+      </div>
+    </div>
+    <div>{{ foodtruck.date.start.formatedDate }} {{ foodtruck.date.start.formatedTime }} - {{ foodtruck.date.end.formatedTime }}</div>
+    {% if config.showLocation %}
+      <div class="xsmall">{{ foodtruck.location.address.formated }} - {{ foodtruck.name }}</div>
+    {% endif %}
+  </div>
+{% else %}
+  <div>
+    {{ translations.notfound }} 😢
+  </div>
+{% endfor %}
+</div>

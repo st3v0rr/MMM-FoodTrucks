@@ -1,0 +1,23 @@
+{
+	"name": "MMM-FoodTrucks",
+	"version": "1.0.0",
+	"description": "Todo: Insert description here!",
+	"main": "",
+	"author": "Stefan Nachtrab",
+	"license": "MIT",
+	"devDependencies": {
+		"babel-eslint": "^10.1.0",
+		"eslint": "^7.32.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-prettier": "^3.4.1",
+		"prettier": "^2.3.2",
+		"prettier-eslint": "^13.0.0",
+		"prettier-eslint-cli": "^5.0.1",
+		"stylelint-config-standard": "latest",
+		"time-grunt": "latest"
+	},
+	"dependencies": {
+		"dayjs": "^1.11.5",
+		"request": "^2.88.2"
+	}
+}

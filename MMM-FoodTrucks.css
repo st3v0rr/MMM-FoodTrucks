@@ -1,0 +1,40 @@
+.foodtruckcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foodtruckprofile {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+.foodtrucktitle {
+  align-self: end;
+  font-size: 1.5em;
+}
+
+.foodtrucksplitview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-height: 80px;
+}
+
+.foodtrucksalignleft {
+  text-align: left;
+}
+
+.foodtrucksaligncenter {
+  text-align: center;
+}
+
+.foodtruckimage {
+  width: 70%;
+  height: 70%;
+  background: black;
+  margin: 0 auto;
+  align-self: start;
+}
