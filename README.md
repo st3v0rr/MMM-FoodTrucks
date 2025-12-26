@@ -1,8 +1,8 @@
 # MMM-FoodTrucks
 
-This is a module for the [MagicMirror²](https://github.com/MichMich/MagicMirror/).
+This is a module for the [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror/).
 
-A Module for MagicMirror2 designed to integrate with the Craftplaces API.
+A Module for MagicMirror² designed to integrate with the Craftplaces API.
 In order to use the API you need to register at [Craftplaces](https://api.craftplaces.com/) and create an Endpoint for your region.
 
 ## Installation
@@ -18,22 +18,26 @@ npm i
 
 Wait until npm has finished.
 
+## Update
+
+```bash
+cd modules/MMM-FoodTrucks
+git pull
+npm install
+```
+
 ## Using the module
 
 To use this module, add the following configuration block to the modules array in the `config/config.js` file:
 
 ```js
-var config = {
-  modules: [
-    {
-      module: 'MMM-FoodTrucks',
-      position: 'bottom_left',
-      config: {
-        foodTruckUrl: "https://api.craftplaces.com/api/v1/..."
-      }
-    },
-  ]
-}
+{
+  module: "MMM-FoodTrucks",
+  position: "bottom_left",
+  config: {
+    foodTruckUrl: "https://api.craftplaces.com/api/v1/..."
+  }
+},
 ```
 
 ## Configuration options

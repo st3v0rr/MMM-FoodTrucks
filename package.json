@@ -1,23 +1,31 @@
 {
 	"name": "MMM-FoodTrucks",
 	"version": "1.0.0",
-	"description": "Todo: Insert description here!",
+	"description": "A Module for MagicMirror² designed to integrate with the Craftplaces API.",
 	"main": "",
 	"author": "Stefan Nachtrab",
 	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/st3v0rr/MMM-FoodTrucks.git"
+	},
+	"keywords": [
+		"magicmirror",
+		"magicmirror-module",
+		"magicmirror2",
+		"food-trucks",
+		"craftplaces"
+	],
 	"devDependencies": {
 		"babel-eslint": "^10.1.0",
-		"eslint": "^7.32.0",
-		"eslint-config-prettier": "^8.3.0",
-		"eslint-plugin-prettier": "^3.4.1",
-		"prettier": "^2.3.2",
-		"prettier-eslint": "^13.0.0",
-		"prettier-eslint-cli": "^5.0.1",
-		"stylelint-config-standard": "latest",
-		"time-grunt": "latest"
+		"eslint": "^9.39.2",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-prettier": "^5.5.4",
+		"prettier": "^3.7.4",
+		"prettier-eslint": "^16.4.2",
+		"prettier-eslint-cli": "^8.0.1"
 	},
 	"dependencies": {
-		"dayjs": "^1.11.5",
-		"request": "^2.88.2"
+		"dayjs": "^1.11.19"
 	}
 }
